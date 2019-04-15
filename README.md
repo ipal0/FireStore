@@ -1,17 +1,17 @@
 ## Google Cloud FireStore Database Utilities for following functions:
 * To Backup Collections 
 * To Restore Collection
-* To Convert CSV File to Collection
+* To Convert or Import CSV File to Collection
 * To List All Collections
 
 ## Installation:
-* Download the FireStore.py
+* sudo pip3 install firedb
 
 ## Usage Examples:
 
 ### Initialize the FireStore Database
-* import FireStore
-* db = FireStore.db()
+* import firedb
+* db = firedb.db()
 
 ### Backup:
 * db.backup('collection_name') 
@@ -25,7 +25,7 @@
 * db.restore('collection_name.json')
 * This will create a collection with name "collection_name"
 
-### Convert from CSV:
+### Convert or Import from CSV:
 * db.csv2collection(CSV_FileName)
 * This will convert a CSV File to Collection.
 * Optional keyword argument name can be supplied to assign document name. 
